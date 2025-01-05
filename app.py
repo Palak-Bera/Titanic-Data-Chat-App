@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from pinecone import Pinecone, ServerlessSpec
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_pinecone import PineconeVectorStore
-from llama_index.embeddings.openai import OpenAIEmbedding
 from openai import OpenAI
 from langchain_ollama import ChatOllama
 from langchain_core.messages import AIMessage
