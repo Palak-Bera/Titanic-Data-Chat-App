@@ -13,10 +13,18 @@ import os
 
 # Load environment variables
 load_dotenv()
+api_key = os.getenv("PINECONE_API_KEY")
+if not api_key:
+    print("PINECONE_API_KEY is not set")
+else:
+    print("PINECONE_API_KEY is set")
+    
+api_key_p = st.secrets["PINECONE_API_KEY"]
+api_key_g = st.secrets["OPENAI_API_KEY"]
 
 # Function to initialize Pinecone and check for existing index
 def initialize_pinecone():
-    pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
+    pc = Pinecone(api_key=api_key_p)
     index_name = "titanic"
 
     if index_name not in pc.list_indexes().names():
@@ -91,7 +99,7 @@ def generate_response(user_query, relevant_sections):
 
         Generate a clear, precise, and actionable response.
     """
-    client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+    client = OpenAI(api_key=api_key_g)
     response = client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
         model="gpt-4o-mini"
