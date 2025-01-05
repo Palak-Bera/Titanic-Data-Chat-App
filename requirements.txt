@@ -12,4 +12,5 @@ python-dotenv
 langchain-huggingface
 langchain-huggingface
 langchain-ollama
+langchain-openai
 ollama
