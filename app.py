@@ -317,7 +317,8 @@ if st.session_state.page == "first_page":
     """)
 
     if st.button("Continue to Titanic Chatbot 💬"):
-        with st.spinner("Initializing..."):
+        with st.spinner("Hang tight! 🚀 We're gearing up your knowledge base...\n🔍 Building smart connections for your insights.\nThis might take a moment—grab a coffee or simply sit back and watch the magic happen! ☕✨"):
+        # with st.spinner("Initializing..."):
             pc, index_name = initialize_pinecone()
             st.session_state.pinecone_index = pc.Index(index_name)
 
