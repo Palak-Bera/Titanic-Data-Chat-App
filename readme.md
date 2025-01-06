@@ -138,6 +138,14 @@ The Titanic dataset from Kaggle is used to predict survival outcomes based on pa
 ### Model Prediction Page
 ![Model Prediction](Screenshots/3.png)
 
+
+### Plotting Data Page
+![Model Prediction](Screenshots/4.png)
+
+
+### Plotting Data Page
+![Model Prediction](Screenshots/5.png)
+
 ## Deployed App
 
 Application Deploy using Streamlit community cloud.
