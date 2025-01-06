@@ -322,7 +322,7 @@ if st.session_state.page == "first_page":
             st.session_state.pinecone_index = pc.Index(index_name)
 
             if not st.session_state.index_initialized:
-                doc = reading_document(PDF_FILE_PATH)
+                doc = reading_document( r"Knowledge_base\titanic_final_eda.pdf")
                 chunks = chunk_data(doc)
                 generate_and_upload_embeddings(chunks, st.session_state.pinecone_index)
                 st.session_state.index_initialized = True
@@ -344,7 +344,7 @@ if st.session_state.page == "graph_plotting":
     st.title("Titanic Data Visualization 📊")
 
     try:
-        df = pd.read_csv(CSV_FILE_PATH)
+        df = pd.read_csv(r"Knowledge_base\knowledge.csv")
         st.write("Preview of the Titanic dataset:")
         st.dataframe(df)
 
