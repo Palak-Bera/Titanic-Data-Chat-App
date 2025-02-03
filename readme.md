@@ -9,14 +9,14 @@ This repository provides an end-to-end solution for predicting Titanic survival 
 
 The Titanic dataset from Kaggle is used to predict survival outcomes based on passenger details. The pipeline includes model training, inference, data merging, EDA, and visualization. Results are exported as a CSV and PDF report for further usage, such as integration into local knowledge or an interactive app.
 
-| **Category**         | **Details**                                                                                     |
+| **Category**         | **Details**                                                                                      |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | **Dataset Used**      | Titanic dataset from Kaggle (`train.csv` and `test.csv`).                                       |
-| **Objective**         | Predict survival and analyze passenger data for actionable insights.                           |
-| **Models Used**       | Logistic Regression, Support Vector Classifier (SVC), and Random Forest.                       |
-| **Best Model**        | Logistic Regression with ~82% accuracy on training data.                                       |
-| **Outputs**           | Final combined CSV, PDF report with insights, and a hosted Streamlit app.                      |
-| **Hosted App**        | [Titanic Survival Streamlit App](#) *(Replace with actual hosted link)*.                       |
+| **Objective**         | Predict survival and analyze passenger data for actionable insights.                            |
+| **Models Used**       | Logistic Regression, Support Vector Classifier (SVC), and Random Forest.                        |
+| **Best Model**        | Logistic Regression with ~82% accuracy on training data.                                        |
+| **Outputs**           | Final combined CSV, PDF report with insights, and a hosted Streamlit app.                       |
+| **Hosted App**        | [Titanic Survival Streamlit App](https://titanic-insights.streamlit.app/).                      |
 
 ---
 
